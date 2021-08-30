@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bea553b73cca334cb45096c034ef02c, type: 3}
+  m_Name: Flamethrower1
+  m_EditorClassIdentifier: 
+  _name: 
+  _towerView: {fileID: 11400000, guid: 8f752f4af4bd1874ebe0096c2c3f5411, type: 2}
+  _ghostTemplate: {fileID: 5724982966400089593, guid: aae2dbbae815d9241b17c57f3306aa91,
+    type: 3}
+  _nextTower: {fileID: 8957768312469394780, guid: e5f9fe66136684a4dbf91e3122186240,
+    type: 3}
+  _damage: 2
+  _radius: 6
+  _reloadTime: 0.2
+  _settings: {fileID: 11400000, guid: 4627f0f05748c7b4c828fff8f5d5c860, type: 2}
+  _rotationTime: 0.5

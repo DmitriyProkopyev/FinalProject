@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bea553b73cca334cb45096c034ef02c, type: 3}
+  m_Name: MachineGun1
+  m_EditorClassIdentifier: 
+  _name: 
+  _towerView: {fileID: 11400000, guid: bd4f84ee3145ebd43a237fc618ad22a6, type: 2}
+  _ghostTemplate: {fileID: 6208818773341952392, guid: 50579a1370e1f1547a59b932c64c1eb5,
+    type: 3}
+  _nextTower: {fileID: 2798200650458938915, guid: fa26dff61348daa4e9c79f10a91c1c66,
+    type: 3}
+  _damage: 1
+  _radius: 15
+  _reloadTime: 0.3
+  _settings: {fileID: 11400000, guid: 5807ef260c45f2345a81b6ee4778c314, type: 2}
+  _rotationTime: 0.5

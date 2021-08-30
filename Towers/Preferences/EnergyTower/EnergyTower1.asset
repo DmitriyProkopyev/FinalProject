@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924fe124e1db30f498d092a8063e84f5, type: 3}
+  m_Name: EnergyTower1
+  m_EditorClassIdentifier: 
+  _name: 
+  _towerView: {fileID: 11400000, guid: f047e8d2e98dfb046a3265a660ce1c7f, type: 2}
+  _ghostTemplate: {fileID: 7546979891984026469, guid: b217860303bcd0c42b4a5905764c7e2e,
+    type: 3}
+  _nextTower: {fileID: 8680794113321132192, guid: 0bd628bd5dfcb1549a45e1b05416c4d6,
+    type: 3}
+  _damage: 1
+  _radius: 12
+  _reloadTime: 0.2
+  _settings: {fileID: 11400000, guid: 981bdf0beea7ea44bb3d9115741eb0f3, type: 2}

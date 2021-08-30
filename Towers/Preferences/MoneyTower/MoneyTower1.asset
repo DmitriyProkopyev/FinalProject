@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801beb66a9abb7243ae58a70f8e8268a, type: 3}
+  m_Name: MoneyTower1
+  m_EditorClassIdentifier: 
+  _name: 
+  _towerView: {fileID: 11400000, guid: fc372db283c875a4c92b0bca53b09f37, type: 2}
+  _ghostTemplate: {fileID: 8669194571461496831, guid: df67216d59e5a0341bb28aff4c3274b5,
+    type: 3}
+  _nextTower: {fileID: 0}
+  _waitingTime: 2.5
+  _rotationTime: 2
+  _moneyPerTime: 50
+  _soundSettings: {fileID: 11400000, guid: fc392581a90c38e44aa7faea57858077, type: 2}
