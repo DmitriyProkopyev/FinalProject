@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
@@ -8,7 +6,6 @@ using DG.Tweening;
 [RequireComponent(typeof(EnemyMover))]
 [RequireComponent(typeof(EnemyDeath))]
 [RequireComponent(typeof(BoxCollider))]
-[RequireComponent(typeof(Rigidbody))]
 
 public class Enemy : MonoBehaviour
 {
