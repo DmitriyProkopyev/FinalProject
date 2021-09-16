@@ -11,7 +11,7 @@ public class BulletShootingEffect : ShootingEffect
         _burst.count = 1;
         _burst.cycleCount = 0;
 
-        foreach (var particleSystem in ParticleSystems)
+        foreach (ParticleSystem particleSystem in ParticleSystems)
             particleSystem.emission.SetBurst(0, _burst);
     }
 }

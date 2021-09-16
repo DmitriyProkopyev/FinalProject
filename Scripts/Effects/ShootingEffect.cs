@@ -10,13 +10,13 @@ public abstract class ShootingEffect : MonoBehaviour
 
     public void StartShooting()
     {
-        foreach (var particleSystem in ParticleSystems)
+        foreach (ParticleSystem particleSystem in ParticleSystems)
             particleSystem.Play();
     }
 
     public void StopShooting()
     {
-        foreach (var particleSystem in ParticleSystems)
+        foreach (ParticleSystem particleSystem in ParticleSystems)
             particleSystem.Stop();
     }
 }

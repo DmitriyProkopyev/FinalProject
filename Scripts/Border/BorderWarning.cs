@@ -4,7 +4,7 @@ using UnityEngine;
 public class BorderWarning : MonoBehaviour
 {
     [SerializeField] private Border _border;
-    [SerializeField] private SoundSettings _settings;
+    [SerializeField] private readonly SoundSettings _settings;
 
     private SoundPlayer _soundPlayer;
 
@@ -15,13 +15,7 @@ public class BorderWarning : MonoBehaviour
         _border.Crossed += OnBorderCrossed;
     }
 
-    private void OnDisable()
-    {
-        _border.Crossed -= OnBorderCrossed;
-    }
+    private void OnDisable() => _border.Crossed -= OnBorderCrossed;
 
-    private void OnBorderCrossed()
-    {
-        _soundPlayer.Play(SoundPlayer.SoundPlayingType.Single);
-    }
+    private void OnBorderCrossed() => _soundPlayer.Play(SoundPlayer.SoundPlayingType.Single);
 }

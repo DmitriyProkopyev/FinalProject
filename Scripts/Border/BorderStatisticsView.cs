@@ -6,8 +6,8 @@ public class BorderStatisticsView : MonoBehaviour
     [SerializeField] private Border _border;
     [SerializeField] private TMP_Text _text;
 
+    private readonly uint _startAttempts = 5;
     private uint _crossesLeft;
-    private uint _startAttempts = 5;
 
     private void OnEnable()
     {
@@ -16,10 +16,7 @@ public class BorderStatisticsView : MonoBehaviour
         OnBorderCrossed();
     }
 
-    private void OnDisable()
-    {
-        _border.Crossed -= OnBorderCrossed;
-    }
+    private void OnDisable() => _border.Crossed -= OnBorderCrossed;
 
     private void OnBorderCrossed()
     {

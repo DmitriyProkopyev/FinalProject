@@ -6,8 +6,5 @@ public class TowerPlacingEffect : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _effect;
 
-    public void Play()
-    {
-        _effect.Play();
-    }
+    public void Play() => _effect.Play();
 }

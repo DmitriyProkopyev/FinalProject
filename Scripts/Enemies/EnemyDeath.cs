@@ -31,7 +31,7 @@ public class EnemyDeath : MonoBehaviour
 
     private void OnDied(Enemy enemy)
     {
-        var effect = Instantiate(_deathEffectTemplate, enemy.ShootPoint, Quaternion.identity);
+        ParticleSystem effect = Instantiate(_deathEffectTemplate, enemy.ShootPoint, Quaternion.identity);
         effect.transform.parent = null;
         effect.Play();
 

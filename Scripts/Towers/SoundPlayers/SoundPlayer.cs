@@ -46,10 +46,7 @@ public class SoundPlayer : MonoBehaviour
         _playingHasStarted = true;
     }
 
-    public void Stop()
-    {
-        AudioSource.Stop();
-    }
+    public void Stop() => AudioSource.Stop();
 
     public enum SoundPlayingType
     {

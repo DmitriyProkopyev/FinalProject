@@ -9,10 +9,12 @@ public class MenuCameraMover : MonoBehaviour
     [SerializeField] private float _percentsOfTime;
     [SerializeField] private ScreenFader _fader;
 
+    private const float RotationSpeed = 0.01f;
+
     private void Start()
     {
         var tween = transform.DOPath(_path.Points, _duration, PathType.CatmullRom);
-        tween.SetLookAt(0.01f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Restart);
+        tween.SetLookAt(RotationSpeed).SetEase(Ease.Linear).SetLoops(-1, LoopType.Restart);
         StartCoroutine(FadeOnRestart());
     }
 

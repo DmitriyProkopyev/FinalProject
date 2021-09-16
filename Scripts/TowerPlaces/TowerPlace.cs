@@ -10,7 +10,7 @@ public class TowerPlace : MonoBehaviour
     public bool IsFree { get; private set; } = true;
 
     private SoundPlayer _soundPlayer;
-    private Tower _tower;
+    private readonly Tower _tower;
 
     private void OnEnable()
     {
@@ -34,8 +34,5 @@ public class TowerPlace : MonoBehaviour
         return false;
     }
 
-    public void LeavePosition()
-    {
-        IsFree = true;
-    }
+    public void LeavePosition() => IsFree = true;
 }

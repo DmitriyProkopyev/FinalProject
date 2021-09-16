@@ -31,14 +31,11 @@ public class Enemy : MonoBehaviour
 
     public static void CreateNew(Enemy template, Vector3 position, Waypoint path)
     {
-        var enemy = Instantiate(template, position, Quaternion.identity);
+        Enemy enemy = Instantiate(template, position, Quaternion.identity);
         enemy.Initialize(path);
     }
 
-    public void TakeDamage(float damage)
-    {
-        _health.TakeDamage(damage);
-    }
+    public void TakeDamage(float damage) => _health.TakeDamage(damage);
 
     private void OnEnable()
     {
@@ -47,10 +44,7 @@ public class Enemy : MonoBehaviour
         _health.HealthChanged += OnHealthChanged;
     }
 
-    private void OnDisable()
-    {
-        _health.HealthChanged -= OnHealthChanged;
-    }
+    private void OnDisable() => _health.HealthChanged -= OnHealthChanged;
 
     private void OnHealthChanged()
     {

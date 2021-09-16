@@ -6,10 +6,11 @@ public delegate YieldInstruction SequenceAction();
 public class Sequence : MonoBehaviour
 {
     private SequenceAction[] _sequenceActions;
+    private const string SequenceName = nameof(Sequence);
 
     public static Sequence Create(params SequenceAction[] actions)
     {
-        var sequence = new GameObject("Sequence").AddComponent<Sequence>();
+        var sequence = new GameObject(SequenceName).AddComponent<Sequence>();
         sequence.Initialize(actions);
         return sequence;
     }
